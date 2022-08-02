@@ -57,3 +57,15 @@ button_9.grid(row=4, column=3)
 
 button_0 = tk.Button(root, text="0", command=lambda: addToCalculation(0), width=5, font=("Arial", 14))
 button_0.grid(row=5, column=2)
+
+button_plus = tk.Button(root, text="+", command=lambda: addToCalculation("+"), width=5, font=("Arial", 14))
+button_plus.grid(row=2, column=4)
+
+button_minus = tk.Button(root, text="-", command=lambda: addToCalculation("-"), width=5, font=("Arial", 14))
+button_minus.grid(row=3, column=4)
+
+button_multiplication = tk.Button(root, text="*", command=lambda: addToCalculation("*"), width=5, font=("Arial", 14))
+button_multiplication.grid(row=4, column=4)
+
+button_division = tk.Button(root, text="/", command=lambda: addToCalculation("/"), width=5, font=("Arial", 14))
+button_division.grid(row=5, column=4)
