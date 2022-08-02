@@ -81,3 +81,5 @@ button_clear.grid(row=6, column=1, columnspan=2)
 
 button_equals = tk.Button(root, text="=", command=evaluateCalculation, width=11, font=("Arial", 14))
 button_equals.grid(row=6, column=3, columnspan=2)
+
+root.mainloop()
