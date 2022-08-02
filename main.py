@@ -69,3 +69,15 @@ button_multiplication.grid(row=4, column=4)
 
 button_division = tk.Button(root, text="/", command=lambda: addToCalculation("/"), width=5, font=("Arial", 14))
 button_division.grid(row=5, column=4)
+
+button_open = tk.Button(root, text="(", command=lambda: addToCalculation("("), width=5, font=("Arial", 14))
+button_open.grid(row=5, column=1)
+
+button_close = tk.Button(root, text=")", command=lambda: addToCalculation(")"), width=5, font=("Arial", 14))
+button_close.grid(row=5, column=3)
+
+button_clear = tk.Button(root, text="C", command=clearField, width=11, font=("Arial", 14))
+button_clear.grid(row=6, column=1, columnspan=2)
+
+button_equals = tk.Button(root, text="=", command=evaluateCalculation, width=11, font=("Arial", 14))
+button_equals.grid(row=6, column=3, columnspan=2)
